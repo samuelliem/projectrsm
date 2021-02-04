@@ -1,0 +1,715 @@
+@charset 'UTF-8';
+.slick-dots,
+.slick-next,
+.slick-prev {
+    position: absolute;
+    display: block;
+    padding: 0
+}
+
+.slick-dots li button:before,
+.slick-next:before,
+.slick-prev:before {
+    font-family: slick;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.slick-loading .slick-slide,
+.slick-loading .slick-track {
+    visibility: hidden
+}
+
+.slick-loading .slick-list {
+    background: url(ajax-loader.gif) center center no-repeat #fff
+}
+
+@font-face {
+    font-family: slick;
+    font-weight: 400;
+    font-style: normal;
+    src: url(fonts/slick.eot);
+    src: url(fonts/slickd41d.eot?#iefix) format('embedded-opentype'), url(fonts/slick.woff) format('woff'), url(fonts/slick.ttf) format('truetype'), url(fonts/slick.svg#slick) format('svg')
+}
+
+.slick-next,
+.slick-prev {
+    font-size: 0;
+    line-height: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: 0;
+    background: 0 0
+}
+
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+    color: transparent;
+    outline: 0;
+    background: 0 0
+}
+
+.slick-next:focus:before,
+.slick-next:hover:before,
+.slick-prev:focus:before,
+.slick-prev:hover:before {
+    opacity: 1
+}
+
+.slick-next.slick-disabled:before,
+.slick-prev.slick-disabled:before {
+    opacity: .25
+}
+
+.slick-next:before,
+.slick-prev:before {
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #fff
+}
+
+.slick-prev {
+    left: -25px
+}
+
+[dir=rtl] .slick-prev {
+    right: -25px;
+    left: auto
+}
+
+.slick-prev:before {
+    content: '←'
+}
+
+.slick-next:before,
+[dir=rtl] .slick-prev:before {
+    content: '→'
+}
+
+.slick-next {
+    right: -25px
+}
+
+[dir=rtl] .slick-next {
+    right: auto;
+    left: -25px
+}
+
+[dir=rtl] .slick-next:before {
+    content: '←'
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px
+}
+
+.slick-dots {
+    bottom: -25px;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer
+}
+
+.slick-list,
+.slick-slider,
+.slick-track {
+    display: block;
+    position: relative
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: 0;
+    background: 0 0
+}
+
+.slick-dots li button:focus,
+.slick-dots li button:hover {
+    outline: 0
+}
+
+.slick-dots li button:focus:before,
+.slick-dots li button:hover:before {
+    opacity: 1
+}
+
+.slick-dots li button:before {
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: #000
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #000
+}
+
+.slick-slider {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+.slick-list:focus {
+    outline: 0
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.slick-track {
+    top: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.slick-track:after,
+.slick-track:before {
+    display: table;
+    content: ''
+}
+
+.slick-track:after {
+    clear: both
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px
+}
+
+[dir=rtl] .slick-slide {
+    float: right
+}
+
+.slick-slide img {
+    display: block
+}
+
+.slick-slide.slick-loading img {
+    display: none
+}
+
+.slick-slide.dragging img {
+    pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+    display: block
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent
+}
+
+.artists .section-register,
+.slick-arrow.slick-hidden {
+    display: none
+}
+
+.artists .section-socials-logged-in {
+    background-image: unset;
+    background-color: #fff
+}
+
+.section-socials-logged-in hr {
+    display: block
+}
+
+.section-socials-logged-in .ico-social a {
+    color: #CDCDCD
+}
+
+.section-artist-hero {
+    padding: 150px 0 200px;
+    content: "";
+    background-image: linear-gradient(120deg, #63057C 0, #CB2D60 40%, #FF6637 70%, #FFBC5E 100%);
+    height: 550px;
+    position: relative;
+    overflow: hidden
+}
+
+.section-artist-hero::before {
+    background-image: url(../../img/tommy-cash.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 580px;
+    width: 100%;
+    position: absolute;
+    top: -8px;
+    right: 5%;
+    content: ""
+}
+
+.section-artist-hero h1 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.27;
+    color: #fff;
+    margin-bottom: 20px
+}
+
+.section-artist-hero h2 {
+    font-size: 20px;
+    line-height: 1.44;
+    color: #fff;
+    max-width: 500px;
+    margin-bottom: 60px
+}
+
+.section-artist-benefits {
+    padding: 100px 0 160px
+}
+
+.section-artist-benefits h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px
+}
+
+.section-artist-benefits h2 {
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: 1.7px;
+    text-align: center;
+    color: #222325
+}
+
+.section-artist-benefits h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: .9px;
+    text-align: center;
+    color: #8898aa
+}
+
+.section-artist-benefits .benefits-circle {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    position: relative
+}
+
+.section-artist-benefits .benefits-circle.svg-fans {
+    background-image: url(https://d1w4r613sipe3x.cloudfront.net/public/img/ic-fans.svg);
+    background-position: right 7px;
+    background-repeat: no-repeat
+}
+
+.section-artist-benefits .benefits-circle.svg-share {
+    background-image: url(https://d1w4r613sipe3x.cloudfront.net/public/img/ic-share.svg);
+    background-size: 86px 86px;
+    background-position: 4px;
+    background-repeat: no-repeat
+}
+
+.section-artist-benefits .benefits-circle.svg-keep {
+    background-image: url(https://d1w4r613sipe3x.cloudfront.net/public/img/ic-keep.svg);
+    background-position: 0;
+    background-repeat: no-repeat
+}
+
+.section-artist-benefits .benefits-circle.svg-rights {
+    background-image: url(https://d1w4r613sipe3x.cloudfront.net/public/img/ic-rights.svg);
+    background-position: center 0;
+    background-repeat: no-repeat
+}
+
+.artist-testimonials {
+    background-image: linear-gradient(120deg, #63057C 0, #CB2D60 40%, #FF6637 70%, #FFBC5E 100%)
+}
+
+.artist-testimonials .large-circle {
+    background-image: linear-gradient(-199deg, #CB2D60 0, #FF6637 100%)
+}
+
+.artist-testimonials .small-circle {
+    background-image: linear-gradient(-137deg, #CB2D60 0, #FF6637 100%)
+}
+
+.section-artist-vision {
+    padding: 100px 0;
+    background: #f3f5f7
+}
+
+.section-artist-vision h1 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 2.6px;
+    text-align: center;
+    color: #222325
+}
+
+.section-featured-artist {
+    padding: 100px 0 0;
+    background-color: #fff
+}
+
+.section-featured-artist h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px
+}
+
+.section-featured-artist .featured-list {
+    margin-top: 30px
+}
+
+.section-featured-artist .featured-list li {
+    margin-bottom: 40px;
+    margin-left: 30%
+}
+
+.section-featured-artist .featured-list li p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #362728;
+    margin-bottom: 10px
+}
+
+.section-featured-artist .featured-list .ic {
+    font-size: 22px;
+    margin-left: 5px
+}
+
+.section-featured-artist .featured-list li span {
+    font-size: 36px;
+    font-weight: 800;
+    color: #362728
+}
+
+.section-featured-artist .featured-image img {
+    height: 600px
+}
+
+.section-featured-artist .featured-title {
+    position: absolute;
+    bottom: 35px;
+    right: -21px;
+    font-size: 33px;
+    font-weight: 800;
+    text-align: left;
+    color: #362728
+}
+
+.section-artist-join {
+    padding: 120px 0;
+    background-image: linear-gradient(120deg, #63057C 0, #CB2D60 40%, #FF6637 70%, #FFBC5E 100%);
+    text-align: center
+}
+
+.section-artist-join h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: 2.6px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px
+}
+
+.section-artist-join .register .reg-btn {
+    padding: 20px 70px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #ab0064
+}
+
+.artistJoinModal .modal-body {
+    text-align: center;
+    margin-bottom: 60px
+}
+
+.artistJoinModal h1 {
+    font-size: 30px;
+    padding: 25px 0
+}
+
+.artistJoinModal .story-input,
+.artistJoinModal textarea.story-input {
+    font-weight: 300;
+    font-size: 24px;
+    padding-bottom: 4px;
+    text-align: center
+}
+
+.artistJoinModal .story-input {
+    display: inline;
+    outline: 0;
+    border: none;
+    border-bottom: 2px #ddd solid;
+    transition: .3s;
+    color: #bf0260;
+    -webkit-appearance: none;
+    margin-left: 10px;
+    min-width: 222px;
+    width: 35%
+}
+
+.artistJoinModal textarea.story-input {
+    width: 70%;
+    margin: 20px auto 0;
+    word-wrap: break-word;
+    display: block;
+    overflow: hidden
+}
+
+.artistJoinModal .role-area {
+    padding-bottom: 50px
+}
+
+.artistJoinModal .role-area .role-choice {
+    border: 3px solid #F0F0F0;
+    width: 175px;
+    position: relative;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 42px;
+    margin: 5px 10px
+}
+
+.artistJoinModal .role-area .role-choice .role-choice-label {
+    text-align: center;
+    width: auto;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    font-size: 22px
+}
+
+.artistJoinModal .role-area .role-choice:hover {
+    border: 3px solid #dedede
+}
+
+.artistJoinModal .role-area .role-choice.active {
+    border: 3px solid #bf0260;
+    color: #bf0260;
+    cursor: auto
+}
+
+.artistJoinModal .send-btn {
+    background: #bf0260;
+    border-radius: 57px;
+    padding: 15px 50px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 50px;
+    text-transform: uppercase
+}
+
+.artistJoinModal .artist-submit button {
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 15px 0;
+    width: 195px
+}
+
+.artistJoinModal .artist-submit button[disabled]:hover {
+    opacity: .65
+}
+
+.artistJoinModal p.error {
+    font-size: 16px;
+    color: red;
+    padding: 15px
+}
+
+.artistJoinModal .story-input.error {
+    border-bottom: 2px red solid
+}
+
+@media only screen and (max-width:767px) {
+    .section-artist-hero {
+        padding: 100px 0 120px
+    }
+    .section-artist-hero::before {
+        height: 350px;
+        top: 200px;
+        right: -120px
+    }
+    .section-artist-hero h1 {
+        font-size: 50px
+    }
+    .section-artist-hero h2 {
+        font-size: 18px
+    }
+    .section-artist-benefits {
+        padding: 60px 0 70px
+    }
+    .section-artist-benefits h1 {
+        font-size: 35px;
+        margin-bottom: 50px
+    }
+    .section-artist-benefits h2 {
+        margin-top: 20px
+    }
+    .section-artist-benefits .benefits-circle {
+        margin-top: 40px;
+        width: 70px;
+        height: 70px
+    }
+    .section-artist-benefits .benefits-circle.svg-share {
+        background-size: unset;
+        background-position: unset
+    }
+    .section-artist-vision {
+        padding: 60px 0
+    }
+    .section-artist-vision h1 {
+        font-size: 24px
+    }
+    .section-featured-artist {
+        padding: 60px 0 0
+    }
+    .section-featured-artist .container {
+        padding-right: 0
+    }
+    .section-featured-artist h1 {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 50px
+    }
+    .section-featured-artist .featured-list li {
+        margin-left: 0;
+        margin-bottom: 30px
+    }
+    .section-featured-artist .featured-list li p {
+        font-size: 15px;
+        margin-bottom: 0
+    }
+    .section-featured-artist .featured-list .ic {
+        font-size: 18px
+    }
+    .section-featured-artist .featured-list li span {
+        font-size: 25px
+    }
+    .section-featured-artist .featured-image {
+        padding-left: 0;
+        overflow: hidden
+    }
+    .section-featured-artist .featured-image img {
+        height: 400px
+    }
+    .section-featured-artist .featured-title {
+        right: 10px;
+        bottom: 15px;
+        font-size: 18px
+    }
+    .section-artist-join {
+        padding: 60px 0
+    }
+    .section-artist-join h1 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: 2.6px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 50px
+    }
+    .artistJoinModal h1 {
+        font-size: 26px
+    }
+    .artistJoinModal .story-input {
+        margin-left: 0;
+        min-width: 200px;
+        width: 90%;
+        margin-top: 20px
+    }
+    .artistJoinModal textarea.story-input {
+        width: 90%
+    }
+    .artistJoinModal .role-area .role-choice {
+        width: 120px;
+        padding: 13px 0;
+        margin: 5px
+    }
+    .artistJoinModal .role-area .role-choice .role-choice-label {
+        font-size: 18px
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .section-artist-hero::before {
+        height: 450px;
+        top: 100px;
+        right: 0
+    }
+}

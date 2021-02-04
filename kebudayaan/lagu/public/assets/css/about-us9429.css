@@ -1,0 +1,832 @@
+.section-about {
+    padding: 250px 0 200px
+}
+
+.section-about::before {
+    height: 850px;
+    overflow: hidden;
+    position: absolute;
+    top: -200px;
+    transform: skewY(-5deg);
+    transform-origin: 0;
+    width: 100%;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+    content: "";
+    background-image: linear-gradient(-137deg, #1F0043 0, #E50071 100%)
+}
+
+.section-about .about-heading {
+    font-size: 46px;
+    color: #FFF;
+    line-height: 79px;
+    font-weight: 800;
+    letter-spacing: .8px;
+    position: relative;
+    display: block;
+    overflow: visible
+}
+
+.section-about .vertical-slider {
+    display: inline;
+    padding-left: 1rem;
+    margin: 1.19rem 0 .95rem;
+    font-size: 35px;
+    line-height: 50px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.section-about-text h1,
+.section-about-text h2 {
+    margin-bottom: 50px;
+    font-weight: 400;
+    -webkit-text-fill-color: transparent
+}
+
+.section-about .vertical-slider span {
+    animation: topToBottom 12s cubic-bezier(.4, 0, 0, 1) infinite 0s;
+    -ms-animation: topToBottom 12s cubic-bezier(.4, 0, 0, 1) infinite 0s;
+    -webkit-animation: topToBottom 12s cubic-bezier(.4, 0, 0, 1) infinite 0s;
+    font-weight: 400;
+    opacity: 0;
+    width: auto;
+    position: absolute;
+    margin-top: 18px
+}
+
+.section-about .vertical-slider span:nth-child(2) {
+    animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    -webkit-animation-delay: 4s
+}
+
+.section-about .vertical-slider span:nth-child(3) {
+    animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    -webkit-animation-delay: 8s
+}
+
+.section-about .vertical-slider span:nth-child(4) {
+    animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    -webkit-animation-delay: 12s
+}
+
+.section-about-text {
+    padding: 130px 0
+}
+
+.section-about-text h1 {
+    font-size: 40px;
+    text-align: center;
+    background: -webkit-linear-gradient(left, #4F074E, #E21271);
+    background: linear-gradient(to right, #4F074E, #E21271);
+    -webkit-background-clip: text
+}
+
+.section-about-text h2 {
+    font-size: 30px;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(left, #4F074E, #E21271);
+    background: linear-gradient(to right, #4F074E, #E21271);
+    -webkit-background-clip: text
+}
+
+.section-about-text .about-text {
+    font-size: 28px;
+    line-height: 1.5;
+    color: #8898aa;
+    text-align: center;
+    padding: 0 10%;
+    margin-bottom: 100px
+}
+
+.about-section-text .artist-text {
+    padding-left: 5%
+}
+
+.section-about-text .about-bulletpoints li {
+    margin: 25px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center
+}
+
+.section-about-text .about-bulletpoints p {
+    font-size: 22px;
+    line-height: 1.5;
+    padding-left: 20px
+}
+
+.section-about-text .white-circle {
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 9px 24px 5px rgba(0, 0, 0, .04)
+}
+
+.section-about-text .floating-image,
+.section-contact .floating-image {
+    box-shadow: 0 60px 120px rgba(71, 69, 123, .24), 0 15px 35px rgba(71, 69, 123, .24)
+}
+
+.section-about-text .white-circle i {
+    position: absolute;
+    color: #E40071;
+    top: 29px;
+    left: 29px;
+    background: -webkit-linear-gradient(left, #4F074E, #E21271);
+    background: linear-gradient(to right, #4F074E, #E21271);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    opacity: .8
+}
+
+.section-about-text .floating-image-box {
+    height: 400px;
+    margin-top: 80px;
+    -webkit-perspective: 1500px;
+    perspective: 1500px
+}
+
+.section-about-text .floating-image {
+    overflow: visible;
+    -webkit-transition: -webkit-transform .5s cubic-bezier(.23, 1, .32, 1);
+    transition: transform .5s cubic-bezier(.23, 1, .32, 1);
+    -webkit-transform: rotateX(-8deg) rotateY(-14deg);
+    -ms-transform: rotateX(-9deg) rotateY(-17deg);
+    transform: rotateX(-9deg) rotateY(-17deg)
+}
+
+.section-about-text .floating-image.fan {
+    position: relative;
+    overflow: hidden;
+    height: 340px;
+    border-radius: 40px;
+    background: url(../../img/fan-listening-music.png) center center no-repeat;
+    background-size: cover;
+    -webkit-transform: rotateX(4deg) rotateY(-5deg);
+    -ms-transform: rotateX(4deg) rotateY(-5deg);
+    transform: rotateX(4deg) rotateY(-5deg)
+}
+
+.section-about-text .floating-image.artist {
+    position: relative;
+    overflow: hidden;
+    height: 340px;
+    border-radius: 40px;
+    background: url(../../img/tanel-padar-concert.jpg) center center no-repeat;
+    background-size: cover;
+    -webkit-transform: rotateX(-4deg) rotateY(6deg);
+    -ms-transform: rotateX(-4deg) rotateY(6deg);
+    transform: rotateX(-4deg) rotateY(6deg)
+}
+
+.section-team {
+    padding: 100px 0 60px
+}
+
+.section-team .heading h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+    background: -webkit-linear-gradient(left, #4F074E, #E21271);
+    background: linear-gradient(to right, #4F074E, #E21271);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.section-team .heading p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10%;
+    margin-bottom: 60px
+}
+
+.section-team .team-member {
+    height: 300px
+}
+
+.section-team .team-member.founder {
+    height: 370px
+}
+
+.section-team .team-member h3 {
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 5px
+}
+
+.section-team img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all .5s ease;
+    opacity: .7
+}
+
+.section-team img:hover {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1
+}
+
+.section-team .team-member .team-pos {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px
+}
+
+.section-team .team-member .team-res {
+    color: #8898aa;
+    margin-top: 5px;
+    height: 65px
+}
+
+.section-team .team-social {
+    font-size: 20px;
+    color: #0073b0
+}
+
+.section-team .team-social i {
+    height: 20px
+}
+
+.section-vision {
+    padding: 100px 0;
+    background-image: linear-gradient(-137deg, #1F0043 0, #E50071 100%)
+}
+
+.section-vision h1 {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff
+}
+
+.section-customers {
+    padding: 100px 0;
+    background-color: #f6f7fc
+}
+
+.section-customers h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 400;
+    background: -webkit-linear-gradient(left, #4F074E, #E21271);
+    background: linear-gradient(to right, #4F074E, #E21271);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.section-customers h2 {
+    margin-top: 35px;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center
+}
+
+.section-customers h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #8898aa
+}
+
+.section-customers p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #8898aa;
+    text-align: center;
+    padding: 0 10%;
+    margin-bottom: 60px
+}
+
+.section-investors h1,
+.section-partners h1 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    -webkit-text-fill-color: transparent
+}
+
+.section-customers .customers-circle {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    position: relative
+}
+
+.section-customers .customers-circle.svg-play {
+    background-image: url(https://d1w4r613sipe3x.cloudfront.net/public/img/play.svg?v=1.0);
+    background-position: 8px;
+    background-repeat: no-repeat
+}
+
+.section-customers .customers-circle.svg-star {
+    background-image: url(https://d1w4r613sipe3x.cloudfront.net/public/img/star.svg?v=1.0);
+    background-position: left 3px;
+    background-repeat: no-repeat
+}
+
+.section-customers .customers-circle.svg-heart {
+    background-image: url(https://d1w4r613sipe3x.cloudfront.net/public/img/heart.svg?v=1.0);
+    background-position: right 14px;
+    background-repeat: no-repeat
+}
+
+.section-partners {
+    padding: 0 0 100px;
+    text-align: center
+}
+
+.section-partners h1 {
+    margin-bottom: 50px;
+    background: -webkit-linear-gradient(left, #4F074E, #E21271);
+    background: linear-gradient(to right, #4F074E, #E21271);
+    -webkit-background-clip: text
+}
+
+.section-partners .media-logo>img {
+    width: auto;
+    height: 40px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all .5s ease;
+    opacity: .7;
+    margin: 30px 0
+}
+
+.section-partners .media-logo>img:hover {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1
+}
+
+.section-partners .media-logo>img.contriber {
+    height: 22px
+}
+
+.section-partners .media-logo>img.hedman {
+    height: 48px
+}
+
+.section-partners .media-logo>img.swg {
+    height: 40px
+}
+
+.section-partners .media-logo>img.teosto {
+    height: 60px
+}
+
+.section-partners .media-logo>img.everypay {
+    height: 30px
+}
+
+.section-partners .media-logo>img.paytrail {
+    height: 55px
+}
+
+.section-partners .media-logo>img.gramex,
+.section-partners .media-logo>img.stim {
+    height: 50px
+}
+
+.section-partners .media-logo>img.sqreen {
+    height: 48px
+}
+
+.section-investors {
+    padding: 100px 0 60px;
+    background-color: #f6f7fc;
+    text-align: center
+}
+
+.section-investors h1 {
+    margin-bottom: 70px;
+    background: -webkit-linear-gradient(left, #4F074E, #E21271);
+    background: linear-gradient(to right, #4F074E, #E21271);
+    -webkit-background-clip: text
+}
+
+.section-investors .team-member {
+    margin-bottom: 50px
+}
+
+.section-investors .team-member>img {
+    width: 150px;
+    height: 150px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all .5s ease;
+    opacity: .7
+}
+
+.section-investors .team-member h3 {
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 5px
+}
+
+.section-investors .investor-logo {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transform: translateZ(0)
+}
+
+.section-investors .investor-logo img {
+    width: 125px;
+    height: auto;
+    max-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 0
+}
+
+.section-investors .team-member>img:hover {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1
+}
+
+.section-join-us {
+    padding: 100px 0;
+    background-color: #f6f7fc
+}
+
+.section-join-us h1 {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center
+}
+
+.section-join-us img {
+    margin: -18px 0 0 5px
+}
+
+.section-contact {
+    padding: 100px 0
+}
+
+.section-contact h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+    background: -webkit-linear-gradient(left, #4F074E, #E21271);
+    background: linear-gradient(to right, #4F074E, #E21271);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.section-contact .contact-info {
+    margin-top: 50px
+}
+
+.section-contact h2 {
+    font-size: 35px;
+    margin-bottom: 20px
+}
+
+.section-contact a,
+.section-contact p {
+    font-size: 25px;
+    color: #8898aa;
+    margin: 30px 0
+}
+
+.section-contact span {
+    color: #222325;
+    font-weight: 600
+}
+
+.section-contact .floating-image-box {
+    height: 400px;
+    margin-top: 40px;
+    -webkit-perspective: 1500px;
+    perspective: 1500px
+}
+
+.section-contact .floating-image {
+    overflow: visible;
+    -webkit-transition: -webkit-transform .5s cubic-bezier(.23, 1, .32, 1);
+    transition: transform .5s cubic-bezier(.23, 1, .32, 1);
+    -webkit-transform: rotateX(-8deg) rotateY(-14deg);
+    -ms-transform: rotateX(-9deg) rotateY(-17deg);
+    transform: rotateX(-9deg) rotateY(-17deg)
+}
+
+.section-contact .floating-image.tallinn {
+    position: relative;
+    overflow: hidden;
+    height: 340px;
+    border-radius: 40px;
+    background: url(../../img/tallinn.jpg) center center no-repeat;
+    background-size: cover;
+    -webkit-transform: rotateX(4deg) rotateY(-5deg);
+    -ms-transform: rotateX(4deg) rotateY(-5deg);
+    transform: rotateX(4deg) rotateY(-5deg)
+}
+
+@-moz-keyframes topToBottom {
+    0%,
+    100%,
+    80% {
+        opacity: 0
+    }
+    5% {
+        opacity: 0;
+        -moz-transform: translateY(-50px)
+    }
+    10%,
+    35% {
+        opacity: 1;
+        -moz-transform: translateY(0)
+    }
+    40% {
+        opacity: 0;
+        -moz-transform: translateY(50px)
+    }
+}
+
+@-webkit-keyframes topToBottom {
+    0%,
+    100%,
+    80% {
+        opacity: 0
+    }
+    5% {
+        opacity: 0;
+        -webkit-transform: translateY(-50px)
+    }
+    10%,
+    35% {
+        opacity: 1;
+        -webkit-transform: translateY(0)
+    }
+    40% {
+        opacity: 0;
+        -webkit-transform: translateY(50px)
+    }
+}
+
+@-ms-keyframes topToBottom {
+    0%,
+    100%,
+    40%,
+    5%,
+    80% {
+        opacity: 0
+    }
+    5% {
+        -ms-transform: translateY(-50px)
+    }
+    10%,
+    35% {
+        opacity: 1;
+        -ms-transform: translateY(0)
+    }
+    40% {
+        -ms-transform: translateY(50px)
+    }
+}
+
+@-moz-keyframes topToBottomMobile {
+    0%,
+    100%,
+    80% {
+        opacity: 0
+    }
+    5% {
+        opacity: 0;
+        -moz-transform: translateY(0)
+    }
+    10%,
+    35% {
+        opacity: 1;
+        -moz-transform: translateY(0)
+    }
+    40% {
+        opacity: 0;
+        -moz-transform: translateY(50px)
+    }
+}
+
+@-webkit-keyframes topToBottomMobile {
+    0%,
+    100%,
+    80% {
+        opacity: 0
+    }
+    5% {
+        opacity: 0;
+        -webkit-transform: translateY(0)
+    }
+    10%,
+    35% {
+        opacity: 1;
+        -webkit-transform: translateY(0)
+    }
+    40% {
+        opacity: 0;
+        -webkit-transform: translateY(50px)
+    }
+}
+
+@-ms-keyframes topToBottomMobile {
+    10%,
+    35%,
+    5% {
+        -ms-transform: translateY(0)
+    }
+    0%,
+    100%,
+    40%,
+    5%,
+    80% {
+        opacity: 0
+    }
+    10%,
+    35% {
+        opacity: 1
+    }
+    40% {
+        -ms-transform: translateY(50px)
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .section-about-text .floating-image,
+    .section-contact .floating-image {
+        box-shadow: 0 20px 60px rgba(71, 69, 123, .24), 0 15px 35px rgba(71, 69, 123, .24)
+    }
+    .section-about {
+        padding: 100px 0 120px
+    }
+    .section-about::before {
+        height: 550px
+    }
+    .section-about .about-heading {
+        font-size: 38px;
+        text-align: center
+    }
+    .section-about .vertical-slider {
+        display: grid;
+        margin: 0
+    }
+    .section-about .vertical-slider span {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 0;
+        animation: topToBottomMobile 12s ease-out infinite 0s;
+        -ms-animation: topToBottomMobile 12s ease-out infinite 0s;
+        -webkit-animation: topToBottomMobile 12s ease-out infinite 0s
+    }
+    .section-about-text {
+        padding: 60px 0
+    }
+    .section-about-text h1 {
+        font-size: 25px
+    }
+    .section-about-text h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center
+    }
+    .section-about-text .about-text {
+        padding: 0;
+        font-size: 22px;
+        margin-bottom: 60px
+    }
+    .section-about-text .about-bulletpoints li {
+        margin: 20px 0
+    }
+    .section-about-text .white-circle {
+        width: 60px;
+        height: 60px
+    }
+    .section-about-text .white-circle i {
+        top: 21px;
+        left: 21px;
+        font-size: 18px
+    }
+    .section-about-text .about-bulletpoints p {
+        font-size: 18px
+    }
+    .about-section-text .artist-text {
+        padding-left: 0
+    }
+    .section-customers,
+    .section-vision {
+        padding: 60px 0
+    }
+    .section-about-text .floating-image-box,
+    .section-contact .floating-image-box {
+        height: 300px;
+        margin: 45px 8% 0
+    }
+    .section-customers h1 {
+        margin-bottom: 30px;
+        font-size: 35px
+    }
+    .section-customers p {
+        font-size: 18px;
+        margin-bottom: 45px
+    }
+    .section-customers h2 {
+        margin-top: 15px;
+        font-size: 30px
+    }
+    .section-customers h3 {
+        margin-top: 5px;
+        font-size: 18px
+    }
+    .section-customers .customers-circle {
+        margin-top: 35px;
+        width: 70px;
+        height: 70px
+    }
+    .section-vision h1 {
+        font-size: 24px
+    }
+    .section-team {
+        padding: 60px 0 30px
+    }
+    .section-team img {
+        height: 120px;
+        width: 120px
+    }
+    .section-team .heading h1 {
+        font-size: 35px;
+        margin-bottom: 30px
+    }
+    .section-team .heading p {
+        font-size: 18px
+    }
+    .section-team .team-member {
+        height: 245px
+    }
+    .section-team .team-member.founder {
+        height: 370px
+    }
+    .section-partners .media-logo>img {
+        max-height: 35px
+    }
+    .section-investors .investor-logo {
+        height: 130px;
+        width: 130px
+    }
+    .section-investors .investor-logo img {
+        width: 100px
+    }
+    .section-investors .team-member>img {
+        width: 130px;
+        height: 130px
+    }
+    .section-investors .team-member {
+        padding: 0;
+        margin-bottom: 40px
+    }
+    .section-contact .contact-info {
+        margin-top: 0;
+        text-align: center
+    }
+    .section-contact h2 {
+        font-size: 24px
+    }
+    .section-contact a,
+    .section-contact p {
+        font-size: 23px
+    }
+}
