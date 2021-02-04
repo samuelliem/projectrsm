@@ -1,0 +1,81 @@
+body {
+    overflow-x: hidden;
+}
+
+#homepage {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../homebackground.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+@media (min-width: 300px) {
+    #homepage {
+        background-image: url(../homebackground.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-brand {
+    background-image: url(../logo.jpg);
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 55px;
+    border: inset;
+    border-radius: 500%;
+    background-position: center;
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(203, 44, 77);
+}
+
+.navbar-light .navbar-toggler-icon {
+    color: black;
+}
+
+#judul1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#judul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+/*==== BOOTSTRAP BREAK POINTS;
+
+Extra small (xs) devices (potraint phones, less than 576px)
+NO media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) {...}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {...}
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) {...}
+
+Extra (xl) large devices (large desktop, 1200px and up)
+@media (min-width: 1200px) {...}
+
+====*/
