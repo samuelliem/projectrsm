@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+# Makanan Home Section
+--------------------------------------------------------------*/
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-brand {
+    background-image: url("image/logo.jpg");
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 55px;
+    border: inset;
+    border-radius: 500%;
+    background-position: center;
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(203, 44, 77);
+}
+
+#konten1 p {
+    font-size: 18px;
+    margin-top: 14px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    color: black;
+}
+
+.justify-content-center.align-items-center.align-content-center {
+    align-items: center;
+}
+
+#judul1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#judul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#homepage .container.d-flex.flex-column {
+    max-width: 300px;
+    text-align: center;
+}
+
+#judulkonten1 {
+    position: sticky;
+    top: 0;
+}
+
+#homepage .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    text-align: center;
+}
