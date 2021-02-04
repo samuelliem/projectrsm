@@ -1,0 +1,122 @@
+body {
+    overflow-x: hidden;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-brand {
+    background-image: url(../logo.jpg);
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 55px;
+    border: inset;
+    border-radius: 500%;
+    background-position: center;
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(203, 44, 77);
+}
+
+img {
+    margin-left: 723px;
+    margin-bottom: -133px;
+    margin-top: -517px;
+    width: 534px;
+}
+
+[type=search] {
+    margin-left: 70px;
+    margin-top: 0px;
+}
+
+p {
+    font-size: 21px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    color: black;
+}
+
+.justify-content-center.align-items-center.align-content-center {
+    align-items: center;
+}
+
+#judul1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#judul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container.d-flex.flex-column {
+    max-width: 300px;
+    text-align: center;
+}
+
+.boxsearch {
+    margin: auto;
+    border: 2px solid #2a1737;
+    padding: 0px 10px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.element {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.search {
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: nunito;
+    color: #2a1737;
+    font-weight: 500;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.material-icons {
+    font-size: 25px;
+    color: #2a1737;
+}
+
+
+/*==== BOOTSTRAP BREAK POINTS;
+
+Extra small (xs) devices (potraint phones, less than 576px)
+NO media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) {...}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {...}
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) {...}
+
+Extra (xl) large devices (large desktop, 1200px and up)
+@media (min-width: 1200px) {...}
+
+====*/
